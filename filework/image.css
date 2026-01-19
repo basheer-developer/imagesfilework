@@ -1,0 +1,76 @@
+/* ===== GLOBAL ===== */
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0f172a;
+    color: #dbeafe;
+    line-height: 1.9;
+    padding: 25px;
+}
+
+/* ===== PARAGRAPHS (NO HOVER) ===== */
+p, pr{
+    background: #020617;
+    padding: 18px 22px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    border-left: 5px solid #2563eb;
+    color: #dbeafe;
+}
+
+/* ===== FIRST LINE SLIGHT BLUE ===== */
+p::first-line, pr::first-line{
+    color:#60a5fa;
+    font-weight:600;
+}
+
+/* ===== IMAGES (NO HOVER, NO MOVE) ===== */
+img{
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+    background:#020617;
+    padding:6px;
+    transition:none;
+}
+
+/* ===== FLOAT IMAGE BORDER COLOR ===== */
+img[style*="float:left"]{
+    border: 2px solid #2563eb;
+}
+
+img[style*="float:right"]{
+    border: 2px solid #22c55e;
+}
+
+/* ===== HR CLEAN ===== */
+hr{
+    border:none;
+    height:1px;
+    background:#1e3a8a;
+    margin:40px 0;
+}
+
+/* ===== FIGURE ===== */
+figure{
+    background:#020617;
+    padding:18px;
+    border-radius:18px;
+    display:inline-block;
+    margin:20px 0;
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+}
+
+figcaption{
+    margin-top:10px;
+    color:#93c5fd;
+    font-size:14px;
+    text-align:center;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+    img{
+        float:none !important;
+        display:block;
+        margin:0 auto 20px;
+    }
+}
